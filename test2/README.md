@@ -32,7 +32,7 @@ SQL> GRANT con_res_view_gyj1 TO new_user_gyj1;
 SQL> exit
 ```
 > 语句“ALTER USER new_user_gyj QUOTA 50M ON users;”是指授权new_user_gyj用户访问users表空间，空间限额是50M。
-![运行结果](https://github.com/guyongjie/oracle/blob/master/test2/1.png)
+![运行结果](https://github.com/guyongjie/oracle/blob/master/test2/2.png)
 
 - 第2步：新用户new_user_gyj连接到pdborcl，创建表nametable和视图nameview，插入数据，最后将nameview的SELECT对象权限授予hr用户。
 
@@ -54,7 +54,7 @@ SQL> GRANT SELECT ON nameview TO hr;
 
 SQL>exit
 ```
-![运行结果](https://github.com/guyongjie/oracle/blob/master/test2/2.png)
+![运行结果](https://github.com/guyongjie/oracle/blob/master/test2/1.png)
 - 第3步：用户hr连接到pdborcl，查询new_user_gyj1授予它的视图myview
 
 ```sql
