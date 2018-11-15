@@ -34,3 +34,9 @@ where b.order_id is null
 select departments.*,employees.name as "负责人"
 from departments,employees
 where departments.department_id=employees.department_id
+
+询部门表，统计每个部门的销售总金额。
+  select a.department_name,(select sum(c.Trade_Receivable)from orders c  where c.employee_id=d.employee_id group by c.employee_id)as "销售总额"
+from departments a,employees b,orders d
+where a.department_id=b.department_id
+and d.employee_id=b.employee_id;
