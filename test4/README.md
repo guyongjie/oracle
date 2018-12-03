@@ -33,7 +33,9 @@ from orders a,order_details b,products c
 where a.order_id=b.order_id and b.product_name=c.product_name;
 ```
 ![运行结果](https://github.com/guyongjie/oracle/blob/master/test4/4.4.png)
+
 5.查询出所有空订单，即没有订单详单的订单。
+
 ```SQL
 select a.*
 from orders a left join order_details b
