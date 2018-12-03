@@ -4,7 +4,9 @@
 了解Oracle表和视图的概念，学习使用SQL语句Create Table创建表，学习Select语句插入，修改，删除以及查询数据，学习使用SQL语句创建视图，学习部分存储过程和触发器的使用。
 查询数据：
 1.查询某个员工的信息
+...sql
 select * from employees where employee_id=11;
+...
 ![运行结果](https://github.com/guyongjie/oracle/blob/master/test4/4.1.png)
 2.递归查询某个员工及其所有下属，子下属员工。
 select a.*,b.Name AS "下属"
