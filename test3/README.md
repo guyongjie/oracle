@@ -7,3 +7,6 @@
 ![运行结果](https://github.com/guyongjie/oracle/blob/master/test3/3.2.png)
 插入10000条数据
 ![运行结果](https://github.com/guyongjie/oracle/blob/master/test3/3.3.png)
+分区与不分区的对比
+![运行结果](https://github.com/guyongjie/oracle/blob/master/test3/3-4.png)
+![运行结果](https://github.com/guyongjie/oracle/blob/master/test3/3-5.png)
